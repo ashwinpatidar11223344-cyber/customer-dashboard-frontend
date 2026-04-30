@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = `https://customer-dashboard-hhnd.onrender.com/customers`;
+const API = `${process.env.NEXT_PUBLIC_API_URL}/customers`;
 export const getCustomers = () => axios.get(API);
 console.log('API URL:', API);
 
